@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "mktg-python",
+  "private_key_id": "0914b491a85dd2e2b08ca9d8e0933b72876bad0d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCmDWfSyVMAM7Hc\nJK0LhLiWIqsO4cy/9YwF4UMEWzpAe35rTU82ZcD7WRUUYqzZ922K6RmQ7f9lAis6\n3IugqT0+maW0N2Q3fCM5zNx6g3Ha/RrCwdtT+RU/AgLtxACUm35ALAbVwR7kgSsV\nV1jU8HdIdXdQ6xUshyeIouiwYRJpoxYEYYDdvwjoMRXSuA6jc4xglxrQFUd+OH74\ni/c5wQ2R+inTavkfFzy43R+yxLghVGgX5Ancsz6LC9vF8HvkVoJkXZnL8+5BNLBw\nkEXwu7xhrDx4tDuru9LoD0M4zUONrhbimHgOplT5Fe1tJQwvWvPrQdnf6X6MKiP0\nNNR8Egk9AgMBAAECggEABTvNw9TBFzP0ko6cXqJ8VTe6rPwnFtNvf52ciLYIYBEU\nXbTrfs3WYdr/rAC6gnSG4RaHjgFrp9xu44rLzXtFY872Fvfvom5jnNYtCnZ7SkPp\nH0N6vSA6usg+h+MXgpeOXd7qszuEP1RROORjzMhXIMiaWLROxUnC5aP+0f+pPnzj\n9SH+5aQhgTfgUOcxc006A2AyvFxgIXeihoHpJqQNKQRF2ztsDaLlUwj/J6+clB0C\nD4HtOveD8JFLMqb9elr9VhLp0eAOteHCdoB58xWtododwxHypax8Bz1zusny+pwU\nTnodNVC3y7ixcYU7FOqrUt1wezHO0lyY6heDib0XIQKBgQDc2wj++NVEbohlvCac\n1A/kBlFb6mHAS4LDFLwTZmRqax1Vd9ByRVD2dfwUeCJhiockAgrF2FgAGqaQX9ze\nULnoXxKGeuH69mVn8+IH5ELpPCZZux0y7/Ftwop7wDndTc5mtRePdAuRQX7v+ZEn\nTUfB/MNiDtUfU2TZVs/YRaaP4QKBgQDAedu15jtPQCLs/RvGdYDjXUsCbLncN4qd\nj0Ed5L/x6jw5aqiG8lyH72jlOFQ0hSafdIbpaZJAhn1Djl+yMJSiusmDe/eX0Hpy\nlR/LW+4XywI11lH27GC5mgqiPV0nkmsQhUfavf9VyHze6oY3rLhvDwvWBby3XEnR\nKkb3XlJU3QKBgCsH3jPXha4Enzy7MQbDZqk19eoju5H85GhgBNj+zTfS0O9THeD1\n0nWCvW+7jG9Wz0fbwf+UTGkQyD0/AEisj9xPkctz68267j0XzoVdGxBYcNxw0ZqY\nF4EcM2EzLdMJktp+FC4WHR7bFQFqrbZrnzyTo/naC/pDhFW4TVzFDVPhAoGBAJc/\narpOl+6XvJoz7x6NeWGxDt9x5r842fEkAAxok7ia0wZfXNzmGHYtWGU/VVQMCaSl\nodpLPkT8KfTrLSHN8Q7K7s0mnhIrHf1qV5iqvbburOb3amM5rmxKsu54f/o3oXBS\n+3rVcI7NQ+q7qgqX7DpBPZDJ41jG6a62pRt/f/z1AoGBALmXPkLMBkVJHp/6UDWV\nSKd3YBYdyxCgssKCfoTlIuTJxqEc53kKlWOquWyP9/nAfAx2lm8FgBf8jr44Z24t\nbOxzdea8Z/yP2n6+a9uKkNMnV6PM1VTPf7YiDdY7AFVsCqgEP+puoD/jB+fucIUW\nKqn1yKnA1wE+VThF6rcFhfG4\n-----END PRIVATE KEY-----\n",
+  "client_email": "dataflow-test@mktg-python.iam.gserviceaccount.com",
+  "client_id": "100571512946236498862",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dataflow-test%40mktg-python.iam.gserviceaccount.com"
+}

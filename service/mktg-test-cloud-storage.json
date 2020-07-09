@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "mktg-python",
+  "private_key_id": "a7242c0a04b7c8032a1d666ad240f29a51332c66",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDoU5aQ4L6lGNgN\n6OImQY0y1piuvT8pEoNWOAxDxhQNFrBhiIZJ7oF77rYTHKRMMhRiLo1pvE35G2PM\n7FVMT2mW/TyeN49nfmtctDU3Aw2aSFf6PofkrrsKLCYrHnYrc3zp5brnBXPiISv3\ncWx0zImX21DiVAomcso1PelkmcV/XbLTHRfW/1kVvoUriASnP7W0nSE5ucGcLgh5\nhxYa7bd6rgEXp+QK3HaQVaZfysDeuCTkGVyDFyLMdly5IfD/09HLJomacW78vtiC\nTOT+mA/s9K7xVqN7uiIj/H/DgOJucdM3eJ6BKKePE0TlkxHFE2SqlJjEmtEpLReP\ndMl+gNKTAgMBAAECggEAAzlsziqmDDir+c8olUjotbwIkQ37d34+4J8kXodgukpx\nG2qQVcqr6PJXPyzMkCzqa42OFQRfqC6piVNfZRz9sxb3o/OKKfDBer2tDA8Yq2ZF\nG6P3VgrYYXQ2sKJFMGML6KSJ4SdZbvhYE7LzEmkkxVVDkc0g1SACeeU2MOVarhOl\n8DI4vAldo0hA9sUWBL5KXgobsznlR+DGMZiyDF45sht5rhfc+lJ/GBSxhD89zvem\nUMQp4T6Uth/HidvIWTiB9GozgCmuHdvoMBzsAKtk6wkLufc2nPzu6oRbVoGJR3Cd\nZ8SBPvl0a010yyPXJ7iGW4pLDjEfpE22WEOAMNabEQKBgQD0zjqpd6a8mJMyXWom\nVDSm7a+MQOfQiz8gSy0wYCPGaY35Q8rRHPi3Y3QKP60HdrPPpRQ2NScAEqiwzctN\nwDvxxFZ06mpDwt10mi85o2V8zpvbhy293i9T4Ug+2iXraDJXXEBNw+6S7fUb4zba\nQOj82J3iLLMRtpn3wRCVdr2V0QKBgQDy80Zveq4BRscYWVL4NNA3EtCZFGH+LyXT\nJfVsPgTZXT66rNzYoOeQNdV3YNwAXnIaRwcII/ptkc/iV7rwg7oEJ9H5au7B5xP6\nsiU8eCZafdGJwaSwkGhk7AMEA64ptrm/VsWmk5Mm58Wucnayt7PLrDnXTOZXJ3Wp\n0k7s/LqnIwKBgCLt9hLOHr1UK9SI3aeAZk7XJTAm5qyr4aLy9wyq+w/JadeCI8M4\nlghcqWb49PBWsItVK5Acf2cUQnuPsY1ze1ogwJFIDUeD22NSyKA5vzZSqIxnOlCY\nDjqyr0NAjx6KrHwojohKB5VxXILRJbd4gYXqRoTKCfbiDg/6vSoGWkCxAoGAVNJM\n2CUL1VRBtKWTCyddPq0p+RgdsmIBobuR+Q2aIc2lVgV+QX/D+RxigABoLxTKX5RG\nxzfQeiq7WrnogYpsCoFglOUZoMctuYwy5e7I7TUaUC80cZSpbfrcfq1ORDAQn9YK\nwcKqUJ4A7Yv3FyR9+HET7LBjhzA2q2jKt4DxJeMCgYBvY84wMEy9L7nnJzd64jGY\nEyC3YAT5EvAGx1LOiWFPYAJ6qr9Zc59JWgh0fB6Tgg+NwhrrF49jk3cOp86zrDd9\nloWv8xIegkyv2ItlGWvmISdPam6NZUN7U7eCdJ3xtDtl98H+T3lAsFnyyoWLykET\n2l6hw7tzqCzD9iQtCyQskQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "cloud-storage@mktg-python.iam.gserviceaccount.com",
+  "client_id": "100466235555376196739",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-storage%40mktg-python.iam.gserviceaccount.com"
+}
