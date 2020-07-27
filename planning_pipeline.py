@@ -1,13 +1,17 @@
 from __future__ import absolute_import
+from past.builtins import unicode
 import argparse
 import logging
 import re
 import apache_beam as beam
 from apache_beam.options.pipeline_options import PipelineOptions
 import os
+import json
 
 # load the Service Account json file to allow GCP resources to be used
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'service/mktg-test-data-flow.json'
+
+input_file = 'gs://mktg-data-bucket-1/planning.csv'
 
 
 class DataIngestion:
@@ -17,10 +21,24 @@ class DataIngestion:
         values = re.split(",",
                           re.sub('\r\n', '', re.sub(u'"', '', string_input)))
         row = dict(
-            zip(('date', 'volume', 'open', 'close', 'high', 'low', 'adjclose'),
+            zip(('fiscal', 'productgroup', 'market', 'state', 'region',
+                 'department', 'channel', 'month', 'quarter', 'event', 'cost', 'kpi'),
+                values))
+        return row
+
+
+class CsvToJson(beam.DoFn):
+
+    def process(self, string_input):
+        values = re.split(",",
+                          re.sub('\r\n', '', re.sub(u'"', '', string_input)))
+        row = dict(
+            zip(('fiscal', 'productgroup', 'market', 'state', 'region',
+                 'department', 'channel', 'month', 'quarter', 'event', 'cost', 'kpi'),
                 values))
         print(row)
-        return row
+        return [row]
+
 
 
 def run(argv=None):
@@ -34,7 +52,7 @@ def run(argv=None):
         required=False,
         help='Input file to read. This can be a local file or '
              'a file in a Google Storage Bucket.',
-        default='gs://mktg-data-bucket-1/planning-2020-07-08.csv')
+        default=input_file)
 
     parser.add_argument('--output',
                         dest='output',
@@ -63,8 +81,8 @@ def run(argv=None):
             # It refers to a function we have written. This function will
             # be run in parallel on different workers using input from the
             # previous stage of the pipeline.
-            | 'String To BigQuery Row' >>
-            beam.Map(lambda s: data_ingestion.parse_method(s))
+            # | 'String To BigQuery Row' >> beam.Map(lambda s: data_ingestion.parse_method(s))
+            | 'Convert to Json' >> beam.ParDo(CsvToJson())
             | 'Write to BigQuery' >> beam.io.Write(
                 beam.io.WriteToBigQuery(
                     # The table name is a required argument for the BigQuery sink.
@@ -74,7 +92,9 @@ def run(argv=None):
                     # Here we use the simplest way of defining a schema:
                     # fieldName:fieldType
 
-                    schema='date:String,volume:String,open:String,close:String,high:String,low:String,adjclose:String',
+                    schema='fiscal:STRING,productgroup:STRING,market:STRING,state:STRING,' +
+                           'region:STRING,department:STRING,channel:STRING,month:INTEGER,' +
+                           'quarter:INTEGER,event:INTEGER,cost:FLOAT,kpi:FLOAT',
 
                     # Creates the table in BigQuery if it does not yet exist.
                     create_disposition=beam.io.BigQueryDisposition.CREATE_IF_NEEDED,
